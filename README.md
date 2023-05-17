@@ -18,11 +18,26 @@ Hardening drone Mavlink with SIKE(영문)
   SIKE를 이용하여 안전하고 보안성이 높은 공유키를 생성하고 이 공유키를 이용하여 주고받을 데이터를 암호화 및 복호화하여 통신함으로써 안전한 통신을 구현할 수 있다. 따라서 본 연구에서는 Mavlink 프로토콜에 SIKE 알고리즘을 추가하여 드론 통신 보안성을 높이는 방안을 제시하고자 한다.  
 
 ## Library
+사용한 라이브러리 리스트  
 1. MavLink - https://github.com/mavlink/mavlink
 2. SIKE - https://github.com/microsoft/PQCrypto-SIDH
-3. libsodium - https://github.com/jedisct1/libsodium
+3. libsodium - https://github.com/jedisct1/libsodium  
+
+각 라이브러리 공식 홈페이지에 들어가서 다운로드 후 빌드하여 이용  
   
 ## Results  
+
+암호화 복호화 없는 mavlink 통신  
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/1.png)   
+  
+SIKE로 비밀 공유키를 생성  
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/2.png)   
+  
+생성한 비밀 공유키를 이용하여 데이터를 암호화 한 후 서버로 전송, 서버는 받은 데이터를 복호화  
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/3.png)   
+  
+생성한 비밀 공유키를 이용하여 mavlink메세지를 암호화 한 후 드론으로 전송, 드론은 받은 mavlink 메세지를 복호화 
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/4.png)   
 
 
 ## Conclusion
