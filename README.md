@@ -47,7 +47,7 @@ SIKE로 비밀 공유키를 생성
   
 생성한 비밀 공유키를 이용하여 mavlink메세지를 암호화 한 후 드론으로 전송, 드론은 받은 mavlink 메세지를 복호화  
 ![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/3.png)  
- 
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/3.png) 
 사용자로부터 받은 오토파일럿 모드, 이륙, 목표 위치, 착륙 명령 암호화 후 전송.  
 드론에서 수신 후 복호화하여 명령 처리.  
 
