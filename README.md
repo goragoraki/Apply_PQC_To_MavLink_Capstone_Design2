@@ -67,7 +67,5 @@ SIKE로 비밀 공유키를 생성
 [8] https://eprint.iacr.org/2016/413.pdf  
 
 ## Reports
-[[고성훈]_최종보고서(docx)]
-  
-[[고성훈]_최종보고서(pdf)]
-
+[[고성훈]_최종보고서(docx)](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/4.png)  
+[[고성훈]_최종보고서(pdf)](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C/%5B%EA%B3%A0%EC%84%B1%ED%9B%88%5D%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)  
