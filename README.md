@@ -40,14 +40,11 @@ Hardening drone Mavlink with SIKE(영문)
 ![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/1.png)   
   
 SIKE로 비밀 공유키를 생성  
-![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/2.png)   
-  
-생성한 비밀 공유키를 이용하여 데이터를 암호화 한 후 서버로 전송, 서버는 받은 데이터를 복호화  
-![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/3.png)   
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/2.png)    
   
 생성한 비밀 공유키를 이용하여 mavlink메세지를 암호화 한 후 드론으로 전송, 드론은 받은 mavlink 메세지를 복호화 
 ![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/4.png)   
-서버에서 오토파일럿 모드, 이륙, 목표 위치, 착륙 명령 암호화 후 전송.  
+사용자로부터 받은 오토파일럿 모드, 이륙, 목표 위치, 착륙 명령 암호화 후 전송.  
 드론에서 수신 후 복호화하여 명령 처리.  
 
 
