@@ -20,10 +20,10 @@ Hardening drone Mavlink with SIKE(영문)
   SIKE 알고리즘은 CANS’19에서 발표된 연구 결과에서 Montgomery multiplication을 최적화하고 연산자들의 파이프라이닝을 만족하는 형식으로 명령어셋을 조정함으로써 높은 연산 성능을 달성하는 것이 가능함을 보였다. 따라서 향후에 연구를 지속할 수 있다면 높은 연산 성능을 달성할 수 있는 방법을 고안한다면 더욱더 차별화된 PQC알고리즘으로 활용할 수 있을 것이다.  
   
 연산 속도  
-![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/5.png)   
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/7.png)   
   
 메모리 사용량  
-![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/6.png)   
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/8.png)   
 (연산 단위: clock cycles)  
   
 ## Library
@@ -34,6 +34,9 @@ Hardening drone Mavlink with SIKE(영문)
 
 각 라이브러리 공식 홈페이지에 들어가서 다운로드 후 빌드하여 이용  
   
+## Project diagram
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/5.png)  
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/6.png)  
 ## Results  
 
 암호화 복호화 없는 mavlink 통신  
@@ -42,7 +45,8 @@ Hardening drone Mavlink with SIKE(영문)
 SIKE로 비밀 공유키를 생성  
 ![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/2.png)    
   
-생성한 비밀 공유키를 이용하여 mavlink메세지를 암호화 한 후 드론으로 전송, 드론은 받은 mavlink 메세지를 복호화 
+생성한 비밀 공유키를 이용하여 mavlink메세지를 암호화 한 후 드론으로 전송, 드론은 받은 mavlink 메세지를 복호화  
+![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/3.png)  
 ![image](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/4.png)   
 사용자로부터 받은 오토파일럿 모드, 이륙, 목표 위치, 착륙 명령 암호화 후 전송.  
 드론에서 수신 후 복호화하여 명령 처리.  
@@ -63,7 +67,5 @@ SIKE로 비밀 공유키를 생성
 [8] https://eprint.iacr.org/2016/413.pdf  
 
 ## Reports
-[[고성훈]_최종보고서(docx)]
-  
-[[고성훈]_최종보고서(pdf)]
-
+[[고성훈]_최종보고서(docx)](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/img/4.png)  
+[[고성훈]_최종보고서(pdf)](https://github.com/goragoraki/Apply_PQC_To_MavLink_Capstone_Design2/blob/main/%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C/%5B%EA%B3%A0%EC%84%B1%ED%9B%88%5D%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)  
